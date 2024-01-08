@@ -1,0 +1,284 @@
+    body {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff; /* White background */
+    }
+
+    .sponsor-text {
+        color: white;
+        font-style: italic;
+    }
+
+    header h1 {
+        font-size: 44px; /* Adjust the size as needed */
+    }
+
+    header {
+        background: #a51c30; 
+        color: white; /* White text */
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        background-color: #a51c30; /* Example color: crimson */
+        padding: 10px 20px; /* Add padding as needed */
+    }
+
+    .logo {
+        height: 80px; /* Adjust as needed */
+        width: auto; /* Maintains aspect ratio */
+        margin-right: 20px; /* Spacing between the logo and the text */
+    }
+    
+    .club-info h1 {
+        font-family: 'Trebuchet MS', sans-serif;
+        font-weight: 700; /* 700 is the weight for bold */
+        font-size: 24px; /* Adjust the size as needed */
+        color: white;
+        margin: 0;
+    }
+    
+    .club-info .sponsored {
+        font-size: 16px; /* Adjust as needed */
+        color: #fff; /* Example color: gold */
+        margin: 0; /* Remove default margin */
+        font-style: italic;
+    }
+
+    /* For responsive design */
+    @media (max-width: 768px) {
+        .logo {
+            height: 40px;
+        }
+    }
+
+    .navbar {
+        background-color: #a51c30; /* Adjust the color as needed */
+        text-align: center;
+        padding: 10px 0; /* Add some padding around the navbar */
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex; /* Align items in a row */
+        justify-content: center; /* Center align the items */
+    }
+    
+    .navbar li {
+        margin: 0 10px; /* Spacing between each button */
+    }
+    
+    /* Styles for each button/link */
+    .navbar li a {
+        display: inline-block;
+        padding: 10px 20px; /* Button padding */
+        color: white; /* Text color */
+        text-decoration: none;
+        border: 2px solid white; /* Border to create the 'outlined' effect */
+        border-radius: 5px; /* Slight rounding of corners */
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    /* Hover effect */
+    .navbar li a:hover, .navbar li a:focus {
+        background-color: white; /* Background color on hover */
+        color: #a51c30; /* Text color on hover */
+        text-decoration: none; /* Ensures no underline effect on hover */
+    }
+
+    .welcome-section {
+        background-image: url('images/curling2.png'); /* The URL of your background image */
+        background-size: cover; /* Cover the entire area of the div */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .welcome-content h1 {
+        font-family: 'Robato', sans-serif; /* Choose a modern, sleek font */
+        font-size: 2.5rem; /* Large font size for the main title */
+        font-weight: bold; /* Make the title bold */
+        margin-bottom: 0.5rem; /* Space below the title */
+    }
+    
+    .welcome-content p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.25rem; /* Adjust size for readability */
+        color: white;
+    }
+
+    .carousel {
+        width: 600px; /* Fixed width */
+        height: 400px; /* Fixed height */
+        margin: 0 auto; /* Center the carousel */
+        overflow: hidden;
+        position: relative;
+        
+    }
+
+
+    .carousel-images img {
+        width: 100%; /* Full width of the carousel */
+        height: 100%; /* Full height of the carousel */
+        object-fit: cover; /* Cover the box, maintaining aspect ratio */
+        object-position: center; /* Center the image within the box */
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.5s ease;
+        
+    }
+
+
+    .carousel-images img.active {
+        display: block;
+        opacity: 1;
+    }
+
+
+    #about h2 {
+        text-align: center;
+        /* Any additional styling for h2 */
+    }
+
+    #standings h2 {
+        text-align: center;
+        /* Any additional styling for h2 */
+    }
+
+    #contact h2 {
+        text-align: center;
+        /* Any additional styling for h2 */
+    }
+
+    #standings table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 16px; /* Adjust for readability */
+    }
+
+    #standings th, #standings td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #standings th {
+        background-color: #a51c30; /* Crimson color for header */
+        color: white; /* White text for contrast */
+    }
+
+    #standings tr:nth-child(even) {
+        background-color: #f9f9f9; /* Light gray for even rows */
+    }
+
+    #standings tr:nth-child(odd) {
+        background-color: white; /* White for odd rows */
+    }
+
+    #standings tr:hover {
+        background-color: #f2f2f2; /* Slightly darker on hover */
+    }
+
+    #standings .highlight {
+        background-color: #ffd700; /* Gold color for highlighting */
+        color: #a51c30; /* Adjust text color if necessary */
+    }
+
+    #home table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        font-size: 16px; /* Adjust for readability */
+    }
+
+    #home th, #home td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #home th {
+        background-color: #a51c30; /* Crimson color for header */
+        color: white; /* White text for contrast */
+    }
+
+    #home tr:nth-child(even) {
+        background-color: #f9f9f9; /* Light gray for even rows */
+    }
+
+    #home tr:nth-child(odd) {
+        background-color: white; /* White for odd rows */
+    }
+
+    #home tr:hover {
+        background-color: #f2f2f2; /* Slightly darker on hover */
+    }
+
+    .navbar2 {
+        text-align: center;
+        padding: 10px 0; /* Add some padding around the navbar */
+    }
+    
+    .navbar2 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex; /* Align items in a row */
+        justify-content: center; /* Center align the items */
+    }
+    
+    .navbar2 li {
+        margin: 0 10px; /* Spacing between each button */
+    }
+    
+    /* Styles for each button/link */
+    .navbar2 li a {
+        display: inline-block;
+        padding: 10px 20px; /* Button padding */
+        color: white; /* Text color */
+        text-decoration: none;
+        border: 2px solid white; /* Border to create the 'outlined' effect */
+        border-radius: 5px; /* Slight rounding of corners */
+        transition: all 0.3s ease; /* Smooth transition for hover effect */
+    }
+    
+    /* Hover effect */
+    .navbar2 li a:hover, .navbar2 li a:focus {
+        background-color: white; /* Background color on hover */
+        color: #a51c30; /* Text color on hover */
+        text-decoration: none; /* Ensures no underline effect on hover */
+    }
+
+
+
+    section {
+        padding: 20px;
+        margin: 20px;
+        background-color: white; /* White background for sections */
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Additional styling for better appearance */
+    h2 {
+        color: #a51c30; /* Crimson color for headings */
+    }
+
+    p {
+        color: #000; /* Black color for text */
+    }
+
+

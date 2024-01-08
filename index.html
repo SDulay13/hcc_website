@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Harvard Curling Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trebuchet+MS:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header>
+    <div class="header-top">
+        <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Harvard Curling Club Logo" class="logo"> 
+    </a>
+        <div class="club-info">
+            <h1>Harvard Curling Club</h1>
+            <p class="sponsored">Sponsored by Goldline Curling</p>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="welcome-section">
+    <div class="welcome-content">
+        <h1>Welcome to Harvard Curling!</h1>
+        <p>Join us on the ice for competition, camaraderie, and fun. Whether you're new to curling or a seasoned pro, we have a place for you.</p>
+        <nav class="navbar2">
+            <ul>
+                <li><a href="contact.html">Join Now!</a></li>
+            </ul>
+        </nav>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="images/kris.jpeg" alt="Image 1">
+                <img src="images/team.jpg" alt="Image 2">
+                <img src="images/team2.jpeg" alt="Image 3">
+                <img src="images/team.jpeg" alt="Image 4">
+                <img src="images/award.jpg" alt="Image 5">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </div>
+    <!-- You can add more content here, such as images or additional text -->
+</div>
+    
+
+    <section id="home">
+        <h2>Upcoming Bonspiels</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bonspiel Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Yale Superspiel</td><td>January 26-28, 2024</td><td>Nutmeg Curling Club,
+                    Bridgeport, CT</td></tr>
+                <tr><td>Utica GNCC College Championship</td><td>February 09-11, 2024</td><td>Utica, NY</td></tr>
+        </table>
+    </section>
+    <section>
+        <div id="twitter-feed">
+            <a class="twitter-timeline" href="https://twitter.com/harvardcurling?ref_src=twsrc%5Etfw">Tweets by harvardcurling</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+    </section>
+
+    <script>
+        let current = 0;
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+    
+        function updateCarousel() {
+            images.forEach(img => img.classList.remove('active'));
+            images[current].classList.add('active');
+        }
+    
+        updateCarousel(); // Initialize the carousel
+    
+        setInterval(() => {
+            current = (current + 1) % totalImages;
+            updateCarousel();
+        }, 3000); // Change image every 3000 milliseconds (3 seconds)
+    </script>
+    
+    
+
+</body>
+
+</html>
